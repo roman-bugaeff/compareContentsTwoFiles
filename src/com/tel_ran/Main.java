@@ -7,8 +7,26 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        File file1 = new File("E:/Tel-Ran/IOLesson/1.txt");
-        File file2 = new File("E:/Tel-Ran/IOLesson/2.txt");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        File file1 = new File("box/pasword1");
+        File file2 = new File("box/pasword2");
+        FileWriter fw1 = null;
+        FileWriter fw2 = null;
+        try {
+            int a1 = 0;
+            fw1 = new FileWriter(file1);
+           //while((a1 = fw1.write();))
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            fw2 = new FileWriter(file2);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         List<String> list1 = getFileContent(file1);
         List<String> list2 = getFileContent(file2);
