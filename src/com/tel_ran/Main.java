@@ -8,8 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        File file1 = new File("box/pasword1");
-        File file2 = new File("box/pasword2");
+        File file1 = new File("box/password1.dta");
+        File file2 = new File("box/password2.dta");
         FileWriter fw1 = null;
         FileWriter fw2 = null;
         try {
